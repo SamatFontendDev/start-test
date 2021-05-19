@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Balsamiq Sans', cursive;
+    height: 100vh;
+    overflow: hidden;
+}
+body{
+    background-color: #fbc5d5;
+    height: 100%;
+}
+img{
+    max-width: 100%;
+}
+.wrapper{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    height: 100%;
+}
+.block{
+    width: 500px;
+    background: url('/облако.png') center center no-repeat;
+    background-size: cover;
+    height: 323px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    font-size: 22px;
+    line-height: 1.3;
+}
+.logo{
+    max-width: 250px;
+    max-height: 124px;
+    overflow: hidden;
+}
+.text{
+    text-align: center;
+    width: 60%;
+    padding-bottom: 60px;
+    opacity: 0;
+    transform: translate(0px,120%);
+    transition: .8s;
+}
+.text--active{
+    opacity: 1;
+    transform: translate(0px, 0px);
+    transition: .8s;
+}
+.block-wrap{
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    transition: .8s;
+}
+.block-wrap--active{
+    top: 50%;
+    margin-top: -160px;
+}
+.btns,.block-wrap,.logo-wrap{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    height: 50px;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid #000;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #cbe8fc;
+}
+.btn_bg_pink{
+    background-color: #ff609a;
+    margin-right: 20px;
+}
+.btns{
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    transition: .8s;
+}
+.btns--active{
+    top: 90%;
+    transition: .8s;
+}
+.logo-wrap{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    margin-top: -37.725px;
+    transition: .8s;
+}
+.logo-wrap--active{
+    top: 70px;
+    transition: .8s;
+}
+.btn-text{
+    opacity: 0;
+    transform: translate(0px,120%);
+    transition: .8s;
+}
+.btn-text--active{
+    opacity: 1;
+    transform: translate(0px, 0px);
+    transition: .8s;
+}
