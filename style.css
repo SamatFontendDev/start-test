@@ -21,7 +21,7 @@ img{
 }
 .block{
     width: 500px;
-    background: url('/облако.png') center center no-repeat;
+    background: url('./облако.png') center center no-repeat;
     background-size: cover;
     height: 323px;
     display: flex;
